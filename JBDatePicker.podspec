@@ -1,9 +1,9 @@
 
 
 Pod::Spec.new do |s|
-  s.name             = 'MyHammer/JBDatePicker'
-  s.version          = '1.0'
-  s.summary          = 'A calendar field in which the user can select a date.'
+  s.name             = 'JBDatePicker'
+  s.version          = '1.1'
+  s.summary          = 'MH fork of JBDatePicker for further customisation and modification.'
 
 
   s.description      = <<-DESC

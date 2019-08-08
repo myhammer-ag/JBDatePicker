@@ -294,30 +294,33 @@ class JBDatePickerContentVC: UIViewController, UIScrollViewDelegate {
             
             isPresenting = true
             
+            weak var weakSelf = self
+            
             UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions(), animations: {
+                guard let strongSelf = weakSelf else { return }
                 
                 //animate positions of monthViews
-                previous.frame.origin.x -= self.scrollView.frame.width
-                presented.frame.origin.x -= self.scrollView.frame.width
-                next.frame.origin.x -= self.scrollView.frame.width
+                previous.frame.origin.x -= strongSelf.scrollView.frame.width
+                presented.frame.origin.x -= strongSelf.scrollView.frame.width
+                next.frame.origin.x -= strongSelf.scrollView.frame.width
                 
             }, completion: {_ in
                 
                 //replace identifiers
-                self.replaceMonthViewIdentifier(presented, with: .previous, shouldScrollToPosition: false)
-                self.replaceMonthViewIdentifier(next, with: .presented, shouldScrollToPosition: false)
-                self.presentedMonthView = next
+                weakSelf?.replaceMonthViewIdentifier(presented, with: .previous, shouldScrollToPosition: false)
+                weakSelf?.replaceMonthViewIdentifier(next, with: .presented, shouldScrollToPosition: false)
+                weakSelf?.presentedMonthView = next
                 
                 //set isPresented value
                 previous.isPresented = false
-                self.presentedMonthView.isPresented = true
+                weakSelf?.presentedMonthView.isPresented = true
                 
                 //remove previous monthView
                 previous.removeFromSuperview()
                 
                 //create and insert new 'next' monthView
-                self.addMonthView(self.getNextMonthView(for: next.date), withIdentifier: .next)
-                self.isPresenting = false
+                weakSelf?.addMonthView(self.getNextMonthView(for: next.date), withIdentifier: .next)
+                weakSelf?.isPresenting = false
                 
             })
         }
@@ -331,30 +334,33 @@ class JBDatePickerContentVC: UIViewController, UIScrollViewDelegate {
             
             isPresenting = true
             
+            weak var weakSelf = self
+            
             UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions(), animations: {
+                guard let strongSelf = weakSelf else { return }
                 
                 //animate positions of monthViews
-                previous.frame.origin.x += self.scrollView.frame.width
-                presented.frame.origin.x += self.scrollView.frame.width
-                next.frame.origin.x += self.scrollView.frame.width
+                previous.frame.origin.x += strongSelf.scrollView.frame.width
+                presented.frame.origin.x += strongSelf.scrollView.frame.width
+                next.frame.origin.x += strongSelf.scrollView.frame.width
                 
             }, completion: {_ in
                 
                 //replace identifiers
-                self.replaceMonthViewIdentifier(presented, with: .next, shouldScrollToPosition: false)
-                self.replaceMonthViewIdentifier(previous, with: .presented, shouldScrollToPosition: false)
-                self.presentedMonthView = previous
+                weakSelf?.replaceMonthViewIdentifier(presented, with: .next, shouldScrollToPosition: false)
+                weakSelf?.replaceMonthViewIdentifier(previous, with: .presented, shouldScrollToPosition: false)
+                weakSelf?.presentedMonthView = previous
                 
                 //set isPresented value
                 next.isPresented = false
-                self.presentedMonthView.isPresented = true
+                weakSelf?.presentedMonthView.isPresented = true
                 
                 //remove previous monthView
                 next.removeFromSuperview()
                 
                 //create and insert new 'previous' monthView
-                self.addMonthView(self.getPreviousMonthView(for: previous.date), withIdentifier: .previous)
-                self.isPresenting = false
+                weakSelf?.addMonthView(self.getPreviousMonthView(for: previous.date), withIdentifier: .previous)
+                weakSelf?.isPresenting = false
                 
             })
         }
