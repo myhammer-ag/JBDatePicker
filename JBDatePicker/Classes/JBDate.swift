@@ -1,11 +1,3 @@
-//
-//  JBDate.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 22-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
 

@@ -1,17 +1,9 @@
-//
-//  JBDatePickerContentVC.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 09-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-class JBDatePickerContentVC: UIViewController, UIScrollViewDelegate {
+class MHDatePickerContentVC: UIViewController, UIScrollViewDelegate {
     
     // MARK: - Properties
-    unowned let datePickerView: JBDatePickerView
+    unowned let datePickerView: MHDatePickerView
     let scrollView: UIScrollView
     var presentedMonthView: MonthView
     var scrollDirection: JBScrollDirection = .none
@@ -34,7 +26,7 @@ class JBDatePickerContentVC: UIViewController, UIScrollViewDelegate {
     
     // MARK: - Initialization
 
-    init(datePickerView: JBDatePickerView, frame: CGRect, presentedDate: Date) {
+    init(datePickerView: MHDatePickerView, frame: CGRect, presentedDate: Date) {
         
         self.datePickerView = datePickerView
         self.scrollView = UIScrollView(frame: frame)

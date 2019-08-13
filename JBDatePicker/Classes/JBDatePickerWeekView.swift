@@ -1,24 +1,16 @@
-//
-//  JBDatePickerWeekView.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 13-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-final class JBDatePickerWeekView: UIStackView {
+final class MHDatePickerWeekView: UIStackView {
 
     // MARK: - Properties
-    private weak var datePickerView: JBDatePickerView!
-    private weak var monthView: JBDatePickerMonthView!
+    private weak var datePickerView: MHDatePickerView!
+    private weak var monthView: MHDatePickerMonthView!
     private var index: Int!
-    private var dayViews: [JBDatePickerDayView]!
+    private var dayViews: [MHDatePickerDayView]!
     
 
     // MARK: - Initialization
-    init(datePickerView: JBDatePickerView, monthView: JBDatePickerMonthView, index: Int) {
+    init(datePickerView: MHDatePickerView, monthView: MHDatePickerMonthView, index: Int) {
         
         self.datePickerView = datePickerView
         self.monthView = monthView
@@ -47,7 +39,7 @@ final class JBDatePickerWeekView: UIStackView {
     ///fills the weekView stack with dayviews
     private func createDayViews() {
         
-        dayViews = [JBDatePickerDayView]()
+        dayViews = [MHDatePickerDayView]()
         
         for i in 0..<7 {
 
@@ -55,7 +47,7 @@ final class JBDatePickerWeekView: UIStackView {
             guard index < monthView.monthInfo.weekDayInfo.count else { return }
 
             let dayInfo = monthView.monthInfo.weekDayInfo[index][i]
-            let dayView = JBDatePickerDayView(datePickerView: datePickerView, monthView: monthView, weekView: self, index: i, dayInfo: dayInfo!)
+            let dayView = MHDatePickerDayView(datePickerView: datePickerView, monthView: monthView, weekView: self, index: i, dayInfo: dayInfo!)
             dayViews.append(dayView)
             addArrangedSubview(dayView)
         }

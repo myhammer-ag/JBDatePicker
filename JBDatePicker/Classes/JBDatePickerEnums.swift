@@ -1,11 +1,3 @@
-//
-//  JBDatePickerEnums.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 09-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
 enum MonthViewIdentifier: Int { case previous, presented, next }

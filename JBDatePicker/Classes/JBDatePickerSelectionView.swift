@@ -1,14 +1,6 @@
-//
-//  JBDatePickerSelectionView.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 19-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-class JBDatePickerSelectionView: UIView {
+class MHDatePickerSelectionView: UIView {
     
     // MARK: - Computed properties
     
@@ -84,12 +76,12 @@ class JBDatePickerSelectionView: UIView {
     
     // MARK: - Stored properties
     
-    private unowned let dayView: JBDatePickerDayView
+    private unowned let dayView: MHDatePickerDayView
     var isSemiSelected: Bool
 
     // MARK: - Initialization
     
-    init(dayView: JBDatePickerDayView, frame: CGRect, isSemiSelected: Bool) {
+    init(dayView: MHDatePickerDayView, frame: CGRect, isSemiSelected: Bool) {
         self.dayView = dayView
         self.isSemiSelected = isSemiSelected
         super.init(frame: frame)

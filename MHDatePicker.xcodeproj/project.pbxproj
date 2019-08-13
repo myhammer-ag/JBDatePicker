@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8B39E211E94232300D80C05 /* JBDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B39E1F1E94232300D80C05 /* JBDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B39E211E94232300D80C05 /* MHDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B39E1F1E94232300D80C05 /* MHDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8B39E371E9427C700D80C05 /* JBDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E291E9427C700D80C05 /* JBDate.swift */; };
 		C8B39E381E9427C700D80C05 /* JBDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2A1E9427C700D80C05 /* JBDateExtension.swift */; };
 		C8B39E391E9427C700D80C05 /* JBDatePickerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2B1E9427C700D80C05 /* JBDatePickerContentVC.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		C8B39E1C1E94232300D80C05 /* MHDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8B39E1F1E94232300D80C05 /* JBDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDatePicker.h; sourceTree = "<group>"; };
+		C8B39E1F1E94232300D80C05 /* MHDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHDatePicker.h; sourceTree = "<group>"; };
 		C8B39E201E94232300D80C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8B39E291E9427C700D80C05 /* JBDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDate.swift; sourceTree = "<group>"; };
 		C8B39E2A1E9427C700D80C05 /* JBDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDateExtension.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				C8B39E271E9427C700D80C05 /* Classes */,
-				C8B39E1F1E94232300D80C05 /* JBDatePicker.h */,
+				C8B39E1F1E94232300D80C05 /* MHDatePicker.h */,
 				C8B39E201E94232300D80C05 /* Info.plist */,
 			);
 			path = JBDatePicker;
@@ -130,7 +130,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B39E211E94232300D80C05 /* JBDatePicker.h in Headers */,
+				C8B39E211E94232300D80C05 /* MHDatePicker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

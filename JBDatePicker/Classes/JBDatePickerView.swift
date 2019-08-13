@@ -1,19 +1,11 @@
-//
-//  JBDatePickerView.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 09-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-typealias ContentController = JBDatePickerContentVC
-typealias Manager = JBDatePickerManager
-typealias MonthView = JBDatePickerMonthView
-typealias WeekDaysView = JBDatePickerWeekDaysView
+typealias ContentController = MHDatePickerContentVC
+typealias Manager = MHDatePickerManager
+typealias MonthView = MHDatePickerMonthView
+typealias WeekDaysView = MHDatePickerWeekDaysView
 
-public final class JBDatePickerView: UIView {
+public final class MHDatePickerView: UIView {
     
     // MARK: - Properties
     
@@ -25,20 +17,20 @@ public final class JBDatePickerView: UIView {
     var weekdaysView: WeekDaysView!
     fileprivate var dateFormatter = DateFormatter()
   
-    public weak var delegate: JBDatePickerViewDelegate? {
+    public weak var delegate: MHDatePickerViewDelegate? {
         didSet{
             commonInit()
         }
     }
     
-    public var presentedMonthView: JBDatePickerMonthView! {
+    public var presentedMonthView: MHDatePickerMonthView! {
         didSet {
             delegate?.didPresentOtherMonth(presentedMonthView)
             layoutIfNeeded()
         }
     }
     
-    public var selectedDateView: JBDatePickerDayView! {
+    public var selectedDateView: MHDatePickerDayView! {
         
         willSet {
             selectedDateView?.deselect()
@@ -88,16 +80,16 @@ public final class JBDatePickerView: UIView {
 }
 
 
-extension JBDatePickerView {
+extension MHDatePickerView {
     
     /**
-     Updates the layout of JBDatePicker. This makes sure that elements in JBDatePicker that need a frame, will get their frame.
+     Updates the layout of MHDatePicker. This makes sure that elements in MHDatePicker that need a frame, will get their frame.
      */
     public func updateLayout() {
         
         guard delegate != nil else {
             
-            print("JBDatePickerView warning: there is no delegate set. This is needed for JBDatePickerView to work correctly")
+            print("MHDatePickerView warning: there is no delegate set. This is needed for MHDatePickerView to work correctly")
             return
         }
         
@@ -118,7 +110,7 @@ extension JBDatePickerView {
 }
 
 
-extension JBDatePickerView {
+extension MHDatePickerView {
     
     func monthDescriptionForDate(_ date: Date) -> String {
 
@@ -140,14 +132,14 @@ extension JBDatePickerView {
     }
     
     ///this will call the delegate as well as set the selectedDate on the datePicker. 
-    func didTapDayView(dayView: JBDatePickerDayView) {
+    func didTapDayView(dayView: MHDatePickerDayView) {
         selectedDateView = dayView
         delegate?.didSelectDay(dayView)
     }
 }
 
 
-extension JBDatePickerView {
+extension MHDatePickerView {
     
     ///scrolls the next month into the visible area and creates an new 'next' month waiting in line.
     public func loadNextView() {

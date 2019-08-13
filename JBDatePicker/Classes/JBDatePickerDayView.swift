@@ -1,21 +1,13 @@
-//
-//  JBDatePickerDayView.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 13-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-public final class JBDatePickerDayView: UIView {
+public final class MHDatePickerDayView: UIView {
 
     // MARK: - Properties
     private var index: Int!
     private var dayInfo: JBDay!
-    weak private var weekView: JBDatePickerWeekView!
-    weak private var monthView: JBDatePickerMonthView!
-    weak var datePickerView: JBDatePickerView!
+    weak private var weekView: MHDatePickerWeekView!
+    weak private var monthView: MHDatePickerMonthView!
+    weak var datePickerView: MHDatePickerView!
     public var date: Date?
 
     var isToday: Bool {
@@ -23,7 +15,7 @@ public final class JBDatePickerDayView: UIView {
     }
     
     private var textLabel: UILabel!
-    private weak var selectionView: JBDatePickerSelectionView?
+    private weak var selectionView: MHDatePickerSelectionView?
     
     private let longPressArea: CGFloat = 40
     private var longPressAreaMaxX: CGFloat { return bounds.width + longPressArea }
@@ -33,7 +25,7 @@ public final class JBDatePickerDayView: UIView {
     
     // MARK: - Initialization
     
-    init(datePickerView: JBDatePickerView, monthView: JBDatePickerMonthView, weekView: JBDatePickerWeekView, index: Int, dayInfo: JBDay) {
+    init(datePickerView: MHDatePickerView, monthView: MHDatePickerMonthView, weekView: MHDatePickerWeekView, index: Int, dayInfo: JBDay) {
         
         self.datePickerView = datePickerView
         self.monthView = monthView
@@ -157,7 +149,7 @@ public final class JBDatePickerDayView: UIView {
                 fontToUse = customFont
             }
             else {
-                print("custom font '\(preferredFont.fontName)' for dayLabel not available. JBDatePicker will use system font instead")
+                print("custom font '\(preferredFont.fontName)' for dayLabel not available. MHDatePicker will use system font instead")
                 fontToUse = UIFont.systemFont(ofSize: sizeOfFont, weight: UIFont.Weight.regular)
             }
         }
@@ -233,7 +225,7 @@ public final class JBDatePickerDayView: UIView {
     
     func select() {
 
-        let selView = JBDatePickerSelectionView(dayView: self, frame: self.bounds, isSemiSelected: false)
+        let selView = MHDatePickerSelectionView(dayView: self, frame: self.bounds, isSemiSelected: false)
         insertSubview(selView, at: 0)
 
         selView.translatesAutoresizingMaskIntoConstraints = false
@@ -284,7 +276,7 @@ public final class JBDatePickerDayView: UIView {
             }
         }
         else {
-            let selView = JBDatePickerSelectionView(dayView: self, frame: self.bounds, isSemiSelected: true)
+            let selView = MHDatePickerSelectionView(dayView: self, frame: self.bounds, isSemiSelected: true)
                 if animated {
                     insertCircleViewAnimated(selectionView: selView)
                 }
@@ -312,7 +304,7 @@ public final class JBDatePickerDayView: UIView {
     }
     
     ///just a helper that inserts the selection circle animated
-    private func insertCircleViewAnimated(selectionView: JBDatePickerSelectionView) {
+    private func insertCircleViewAnimated(selectionView: MHDatePickerSelectionView) {
         
         selectionView.alpha = 0.0
         insertSubview(selectionView, at: 0)

@@ -1,14 +1,6 @@
-//
-//  JBDatePickerViewDelegate.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 17-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-public protocol JBDatePickerViewDelegate: class {
+public protocol MHDatePickerViewDelegate: class {
     
     /**
      Is called when the user selected a day
@@ -16,7 +8,7 @@ public protocol JBDatePickerViewDelegate: class {
      - note:
      Implementing this method is mandatory
      */
-    func didSelectDay(_ dayView: JBDatePickerDayView)
+    func didSelectDay(_ dayView: MHDatePickerDayView)
     
     /**
      Is called when the user swiped (or manually moved) to another month
@@ -24,7 +16,7 @@ public protocol JBDatePickerViewDelegate: class {
      - note:
      Implementing this method is optional.
      */
-    func didPresentOtherMonth(_ monthView: JBDatePickerMonthView)
+    func didPresentOtherMonth(_ monthView: MHDatePickerMonthView)
     
     /**
      Is called to check if any particular date is selectable by the picker
@@ -100,7 +92,7 @@ public protocol JBDatePickerViewDelegate: class {
     /**
      font of the date labels. Defaults to systemfont with a medium size.
      
-     - Note: you can use any UIFont name you want, as long as it is available. If it's not available, JBDatePicker will
+     - Note: you can use any UIFont name you want, as long as it is available. If it's not available, MHDatePicker will
      use the systemfont instead. If you want to use the systemfont but customize it's size, use an empty string as the
      fontname.
      
@@ -152,7 +144,7 @@ public protocol JBDatePickerViewDelegate: class {
     font of the labels in the WeekdaysView bar that say 'mon' to 'sun'. Defaults to systemfont with 
      a medium size.
      
-     - Note: you can use any UIFont name you want, as long as it is available. If it's not available, JBDatePicker will
+     - Note: you can use any UIFont name you want, as long as it is available. If it's not available, MHDatePicker will
      use the systemfont instead. If you want to use the systemfont but customize it's size, use an empty string as the 
      fontname. 
      
@@ -189,9 +181,9 @@ public protocol JBDatePickerViewDelegate: class {
 /**
  This protocol extension is used to make some of the delegate methods and variables optional by giving them a default implementation or value.
  */
-public extension JBDatePickerViewDelegate {
+public extension MHDatePickerViewDelegate {
     
-    public func didPresentOtherMonth(_ monthView: JBDatePickerMonthView) {}
+    public func didPresentOtherMonth(_ monthView: MHDatePickerMonthView) {}
     public func shouldAllowSelectionOfDay(_ date: Date?) -> Bool { return true }
     public func weekdaySymbols(for calendar: Calendar) -> [String] { return calendar.shortStandaloneWeekdaySymbols }
     

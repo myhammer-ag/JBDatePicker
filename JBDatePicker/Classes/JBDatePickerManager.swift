@@ -1,18 +1,10 @@
-//
-//  JBDatePickerManager.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 12-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-final class JBDatePickerManager {
+final class MHDatePickerManager {
     
     // MARK: - Properties
     private var components: DateComponents
-    private unowned let datePickerView: JBDatePickerView
+    private unowned let datePickerView: MHDatePickerView
     private var calendar: Calendar = .current
     private var currentDate: Date = Date()
     private var startdayOfWeek: Int
@@ -21,7 +13,7 @@ final class JBDatePickerManager {
     
     // MARK: - Initialization
     
-    init(datePickerView: JBDatePickerView) {
+    init(datePickerView: MHDatePickerView) {
         self.datePickerView = datePickerView
         self.components = calendar.dateComponents([.month, .day], from: currentDate)
         startdayOfWeek = (datePickerView.delegate?.firstWeekDay.rawValue)!

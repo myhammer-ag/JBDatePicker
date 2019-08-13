@@ -1,19 +1,11 @@
-//
-//  JBDatePickerMonthView.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 09-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-public final class JBDatePickerMonthView: UIStackView {
+public final class MHDatePickerMonthView: UIStackView {
 
 
     // MARK: - Properties
     
-    weak var datePickerView: JBDatePickerView!
+    weak var datePickerView: MHDatePickerView!
     var date: Date!
     var isPresented: Bool! {
         
@@ -28,11 +20,11 @@ public final class JBDatePickerMonthView: UIStackView {
     public var monthDescription: String!
     var monthInfo: (monthStartDay: Date, monthEndDay: Date, numberOfWeeksInMonth: Int, weekDayInfo: [[Int:JBDay]])!
     var numberOfWeeks: Int!
-    var weekViews: [JBDatePickerWeekView]!
+    var weekViews: [MHDatePickerWeekView]!
     
     // MARK: - Initialization
     
-    init(datePickerView: JBDatePickerView, date: Date, isPresented: Bool) {
+    init(datePickerView: MHDatePickerView, date: Date, isPresented: Bool) {
   
         self.datePickerView = datePickerView
         self.date = date
@@ -77,10 +69,10 @@ public final class JBDatePickerMonthView: UIStackView {
     
     func createWeekViews() {
         
-        weekViews = [JBDatePickerWeekView]()
+        weekViews = [MHDatePickerWeekView]()
         
         for i in 0...5 {
-            let weekView = JBDatePickerWeekView(datePickerView: datePickerView, monthView: self, index: i)
+            let weekView = MHDatePickerWeekView(datePickerView: datePickerView, monthView: self, index: i)
             weekViews.append(weekView)
             self.addArrangedSubview(weekView)
         }

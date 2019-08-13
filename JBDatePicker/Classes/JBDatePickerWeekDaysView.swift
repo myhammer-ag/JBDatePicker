@@ -1,17 +1,9 @@
-//
-//  JBDatePickerWeekDaysView.swift
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 24-10-16.
-//  Copyright © 2016 Joost van Breukelen. All rights reserved.
-//
-
 import UIKit
 
-public final class JBDatePickerWeekDaysView: UIStackView {
+public final class MHDatePickerWeekDaysView: UIStackView {
 
     // MARK: - Properties
-    private weak var datePickerView: JBDatePickerView!
+    private weak var datePickerView: MHDatePickerView!
     private var firstWeekDay: JBWeekDay!
     private var weekdayNameSymbols = [String]()
     private var weekdayLabels = [UILabel]()
@@ -19,7 +11,7 @@ public final class JBDatePickerWeekDaysView: UIStackView {
     
     
     // MARK: - Initialization
-    public init(datePickerView: JBDatePickerView) {
+    public init(datePickerView: MHDatePickerView) {
         self.datePickerView = datePickerView
         super.init(frame: .zero)
         setup()
@@ -126,7 +118,7 @@ public final class JBDatePickerWeekDaysView: UIStackView {
                 fontToUse = customFont
             }
             else {
-                 print("custom font '\(preferredFont.fontName)' for weekdaysView not available. JBDatePicker will use system font instead")
+                 print("custom font '\(preferredFont.fontName)' for weekdaysView not available. MHDatePicker will use system font instead")
                  fontToUse = UIFont.systemFont(ofSize: sizeOfFont, weight: UIFont.Weight.regular)
             }
         }
