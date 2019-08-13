@@ -4,10 +4,7 @@ Pod::Spec.new do |s|
   s.name             = 'MHDatePicker'
   s.version          = '1.0'
   s.summary          = 'MH fork of JBDatePicker for further customisation and modification.'
-
-
-  s.description      = <<-DESC
-MH fork of JBDatePicker for further customisation and modification.                       DESC
+  s.description      = 'MH fork of JBDatePicker for further customisation and modification.'
 
   s.homepage         = 'https://github.com/myhammer-ag/JBDatePicker/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

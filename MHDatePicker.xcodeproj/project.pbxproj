@@ -174,11 +174,11 @@
 			};
 			buildConfigurationList = C8B39E161E94232300D80C05 /* Build configuration list for PBXProject "MHDatePicker" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = C8B39E121E94232300D80C05;
 			productRefGroup = C8B39E1D1E94232300D80C05 /* Products */;

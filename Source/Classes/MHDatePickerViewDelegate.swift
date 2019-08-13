@@ -183,14 +183,14 @@ public protocol MHDatePickerViewDelegate: class {
  */
 public extension MHDatePickerViewDelegate {
     
-    public func didPresentOtherMonth(_ monthView: MHDatePickerMonthView) {}
-    public func shouldAllowSelectionOfDay(_ date: Date?) -> Bool { return true }
-    public func weekdaySymbols(for calendar: Calendar) -> [String] { return calendar.shortStandaloneWeekdaySymbols }
+    func didPresentOtherMonth(_ monthView: MHDatePickerMonthView) {}
+    func shouldAllowSelectionOfDay(_ date: Date?) -> Bool { return true }
+    func weekdaySymbols(for calendar: Calendar) -> [String] { return calendar.shortStandaloneWeekdaySymbols }
     
     // MARK: - General defaults
     
-    public var dateToShow: Date { return Date()}
-    public var firstWeekDay: MHWeekDay {
+    var dateToShow: Date { return Date()}
+    var firstWeekDay: MHWeekDay {
         
         if let calendarValue = MHWeekDay(rawValue: Calendar.current.firstWeekday){
             return calendarValue
@@ -200,23 +200,23 @@ public extension MHDatePickerViewDelegate {
         }
     }
     
-    public var shouldShowMonthOutDates: Bool { return true }
-    public var shouldLocalize: Bool { return false }
-    public var weekDaysViewHeightRatio: CGFloat { return 0.1 }
-    public var selectionShape: MHSelectionShape { return .circle }
-    public var fontForDayLabel: MHFont { return MHFont() }
+    var shouldShowMonthOutDates: Bool { return true }
+    var shouldLocalize: Bool { return false }
+    var weekDaysViewHeightRatio: CGFloat { return 0.1 }
+    var selectionShape: MHSelectionShape { return .circle }
+    var fontForDayLabel: MHFont { return MHFont() }
     
     // MARK: - Color defaults
     
-    public var colorForDayLabelInMonth: UIColor { return .darkGray }
-    public var colorForDayLabelOutOfMonth: UIColor { return .lightGray }
-    public var colorForUnavaibleDay: UIColor { return .lightGray }
-    public var colorForCurrentDay: UIColor { return .red }
-    public var colorForSelelectedDayLabel: UIColor { return .white }
-    public var colorForWeekDaysViewBackground: UIColor { return  UIColor(red: 81.0/255.0, green: 182.0/255.0, blue: 185.0/255.0, alpha: 1.0) }
-    public var colorForWeekDaysViewText: UIColor { return .white }
-    public var fontForWeekDaysViewText: MHFont { return MHFont() }
-    public var colorForSelectionCircleForOtherDate: UIColor { return  UIColor(red: 81.0/255.0, green: 182.0/255.0, blue: 185.0/255.0, alpha: 1.0) }
-    public var colorForSelectionCircleForToday: UIColor { return UIColor(red: 255.0/255.0, green: 98.0/255.0, blue: 89.0/255.0, alpha: 1.0) }
-    public var colorForSemiSelectedSelectionCircle: UIColor { return UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0) }
+    var colorForDayLabelInMonth: UIColor { return .darkGray }
+    var colorForDayLabelOutOfMonth: UIColor { return .lightGray }
+    var colorForUnavaibleDay: UIColor { return .lightGray }
+    var colorForCurrentDay: UIColor { return .red }
+    var colorForSelelectedDayLabel: UIColor { return .white }
+    var colorForWeekDaysViewBackground: UIColor { return  UIColor(red: 81.0/255.0, green: 182.0/255.0, blue: 185.0/255.0, alpha: 1.0) }
+    var colorForWeekDaysViewText: UIColor { return .white }
+    var fontForWeekDaysViewText: MHFont { return MHFont() }
+    var colorForSelectionCircleForOtherDate: UIColor { return  UIColor(red: 81.0/255.0, green: 182.0/255.0, blue: 185.0/255.0, alpha: 1.0) }
+    var colorForSelectionCircleForToday: UIColor { return UIColor(red: 255.0/255.0, green: 98.0/255.0, blue: 89.0/255.0, alpha: 1.0) }
+    var colorForSemiSelectedSelectionCircle: UIColor { return UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0) }
 }
