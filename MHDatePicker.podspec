@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MHDatePicker'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'MH fork of JBDatePicker for further customisation and modification.'
   s.description      = 'This is a fork of the existing JBDatePicker. It will (eventually) allow for the creation of events and other features.'
   s.swift_version    = '5.0'
