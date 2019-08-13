@@ -56,7 +56,7 @@
 		C8B39E121E94232300D80C05 = {
 			isa = PBXGroup;
 			children = (
-				C8B39E1E1E94232300D80C05 /* JBDatePicker */,
+				C8B39E1E1E94232300D80C05 /* Source */,
 				C8B39E1D1E94232300D80C05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,14 +69,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C8B39E1E1E94232300D80C05 /* JBDatePicker */ = {
+		C8B39E1E1E94232300D80C05 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				C8B39E271E9427C700D80C05 /* Classes */,
 				C8B39E1F1E94232300D80C05 /* MHDatePicker.h */,
 				C8B39E201E94232300D80C05 /* Info.plist */,
 			);
-			path = JBDatePicker;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		C8B39E271E9427C700D80C05 /* Classes */ = {
@@ -348,7 +348,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JBDatePicker/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -369,7 +369,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JBDatePicker/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
