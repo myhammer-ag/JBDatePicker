@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C8B39E1C1E94232300D80C05 /* JBDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B39E1C1E94232300D80C05 /* MHDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B39E1F1E94232300D80C05 /* JBDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBDatePicker.h; sourceTree = "<group>"; };
 		C8B39E201E94232300D80C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8B39E291E9427C700D80C05 /* JBDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		C8B39E1D1E94232300D80C05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8B39E1C1E94232300D80C05 /* JBDatePicker.framework */,
+				C8B39E1C1E94232300D80C05 /* MHDatePicker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C8B39E1B1E94232300D80C05 /* JBDatePicker */ = {
+		C8B39E1B1E94232300D80C05 /* MHDatePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8B39E241E94232300D80C05 /* Build configuration list for PBXNativeTarget "JBDatePicker" */;
+			buildConfigurationList = C8B39E241E94232300D80C05 /* Build configuration list for PBXNativeTarget "MHDatePicker" */;
 			buildPhases = (
 				C8B39E171E94232300D80C05 /* Sources */,
 				C8B39E181E94232300D80C05 /* Frameworks */,
@@ -150,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = JBDatePicker;
+			name = MHDatePicker;
 			productName = JBDatePicker;
-			productReference = C8B39E1C1E94232300D80C05 /* JBDatePicker.framework */;
+			productReference = C8B39E1C1E94232300D80C05 /* MHDatePicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C8B39E161E94232300D80C05 /* Build configuration list for PBXProject "JBDatePicker" */;
+			buildConfigurationList = C8B39E161E94232300D80C05 /* Build configuration list for PBXProject "MHDatePicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C8B39E1B1E94232300D80C05 /* JBDatePicker */,
+				C8B39E1B1E94232300D80C05 /* MHDatePicker */,
 			);
 		};
 /* End PBXProject section */
@@ -384,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C8B39E161E94232300D80C05 /* Build configuration list for PBXProject "JBDatePicker" */ = {
+		C8B39E161E94232300D80C05 /* Build configuration list for PBXProject "MHDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8B39E221E94232300D80C05 /* Debug */,
@@ -393,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8B39E241E94232300D80C05 /* Build configuration list for PBXNativeTarget "JBDatePicker" */ = {
+		C8B39E241E94232300D80C05 /* Build configuration list for PBXNativeTarget "MHDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8B39E251E94232300D80C05 /* Debug */,

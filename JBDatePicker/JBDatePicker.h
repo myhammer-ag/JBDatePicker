@@ -1,11 +1,3 @@
-//
-//  JBDatePicker.h
-//  JBDatePicker
-//
-//  Created by Joost van Breukelen on 04-04-17.
-//  Copyright © 2017 Joost van Breukelen. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for JBDatePicker.
