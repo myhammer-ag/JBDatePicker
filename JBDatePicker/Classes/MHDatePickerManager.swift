@@ -32,11 +32,11 @@ final class MHDatePickerManager {
      
      - Parameter date: the Date object of the month that we want the info about
      - Returns: a tuple holding the startdate, the enddate, the number of weeks and 
-     an array holding dictionaries with the weekDayIndex as key and a JBDay object as value.
-     The JBDay object holds the value (like 17) and a bool that determines that the day involved
+     an array holding dictionaries with the weekDayIndex as key and a MHDay object as value.
+     The MHDay object holds the value (like 17) and a bool that determines that the day involved
      is included in the month or not.
      */
-    func getMonthInfoForDate(_ date: Date) -> (monthStartDay: Date, monthEndDay: Date, numberOfWeeksInMonth: Int, weekDayInfo: [[Int:JBDay]]) {
+    func getMonthInfoForDate(_ date: Date) -> (monthStartDay: Date, monthEndDay: Date, numberOfWeeksInMonth: Int, weekDayInfo: [[Int:MHDay]]) {
         
         var components = calendar.dateComponents([.year, .month, .weekOfMonth], from: date)
         
@@ -105,7 +105,7 @@ final class MHDatePickerManager {
         }
         
         //create array of dictionaries that we well return in the end
-        var weeksInMonthInformationToReturn = [[Int:JBDay]]()
+        var weeksInMonthInformationToReturn = [[Int:MHDay]]()
         
         //this value holds 0 to the number of days in a month
         var dayOfMonthIndex: Int = 0
@@ -118,12 +118,12 @@ final class MHDatePickerManager {
             switch weekIndex {
             case 0:
                 
-                var weekInformationToReturn = [Int:JBDay]()
+                var weekInformationToReturn = [Int:MHDay]()
                 
                 //get the last days of the previous month
                 for i in 0..<previousMonthDatesArray.count {
                     let dayInPreviousMonthValue = previousMonthDatesArray[i]
-                    let dayInPreviousMonth = JBDay(dayValue: dayInPreviousMonthValue, monthValue: previousMonthValue, yearValue: previousYearValue, isInMonth: false)
+                    let dayInPreviousMonth = MHDay(dayValue: dayInPreviousMonthValue, monthValue: previousMonthValue, yearValue: previousYearValue, isInMonth: false)
                     weekInformationToReturn[i] = dayInPreviousMonth
                 }
                 
@@ -136,7 +136,7 @@ final class MHDatePickerManager {
                 for _ in 0..<amountOfFirstDays {
                     
                     let dayInFirstWeekOfMonth = monthDatesArray[dayOfMonthIndex]
-                    let dayInWeek = JBDay(dayValue: dayInFirstWeekOfMonth, monthValue: monthValue, yearValue: yearValue, isInMonth: true)
+                    let dayInWeek = MHDay(dayValue: dayInFirstWeekOfMonth, monthValue: monthValue, yearValue: yearValue, isInMonth: true)
                     weekInformationToReturn[dayOfWeekIndex] = dayInWeek
                     dayOfWeekIndex += 1
                     dayOfMonthIndex += 1
@@ -146,7 +146,7 @@ final class MHDatePickerManager {
                 
             case numberOfWeeksInMonth - 1:
                 
-                var weekInformationToReturn = [Int:JBDay]()
+                var weekInformationToReturn = [Int:MHDay]()
                 
                 //get the last days of the month
                 let amountOfLastDays = 7 - (6 - lastDayIndexInWeekView)
@@ -160,7 +160,7 @@ final class MHDatePickerManager {
                 for _ in 0..<amountOfLastDays {
                     
                     let dayInLastWeekOfMonth = monthDatesArray[dayOfMonthIndex]
-                    let dayInWeek = JBDay(dayValue: dayInLastWeekOfMonth, monthValue: monthValue, yearValue: yearValue, isInMonth: true)
+                    let dayInWeek = MHDay(dayValue: dayInLastWeekOfMonth, monthValue: monthValue, yearValue: yearValue, isInMonth: true)
                     weekInformationToReturn[dayOfWeekIndex] = dayInWeek
                     dayOfWeekIndex += 1
                     dayOfMonthIndex += 1
@@ -169,7 +169,7 @@ final class MHDatePickerManager {
                 //get the first days of the next month
                 for i in 0..<nextMonthDatesArray.count {
                     let dayInNextMontValue = nextMonthDatesArray[i]
-                    let dayInNextMonth = JBDay(dayValue: dayInNextMontValue, monthValue: nextMonthValue, yearValue: nextYearValue, isInMonth: false)
+                    let dayInNextMonth = MHDay(dayValue: dayInNextMontValue, monthValue: nextMonthValue, yearValue: nextYearValue, isInMonth: false)
                     weekInformationToReturn[dayOfWeekIndex + i] = dayInNextMonth
                 }
                 
@@ -179,12 +179,12 @@ final class MHDatePickerManager {
                 
                 //this is the default case (the 'middle weeks')
                 guard dayOfMonthIndex < monthDatesArray.count else {continue}
-                var weekInformationToReturn = [Int:JBDay]()
+                var weekInformationToReturn = [Int:MHDay]()
                 
                 for _ in 0...6 {
                     
                     let dayInWeekOfMonth = monthDatesArray[dayOfMonthIndex]
-                    let dayInWeek = JBDay(dayValue: dayInWeekOfMonth, monthValue: monthValue, yearValue: yearValue, isInMonth: true)
+                    let dayInWeek = MHDay(dayValue: dayInWeekOfMonth, monthValue: monthValue, yearValue: yearValue, isInMonth: true)
                     weekInformationToReturn[dayOfWeekIndex] = dayInWeek
                     dayOfWeekIndex += 1
                     dayOfMonthIndex += 1

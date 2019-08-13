@@ -4,7 +4,7 @@ public final class MHDatePickerWeekDaysView: UIStackView {
 
     // MARK: - Properties
     private weak var datePickerView: MHDatePickerView!
-    private var firstWeekDay: JBWeekDay!
+    private var firstWeekDay: MHWeekDay!
     private var weekdayNameSymbols = [String]()
     private var weekdayLabels = [UILabel]()
     private var weekdayLabelTextColor: UIColor!

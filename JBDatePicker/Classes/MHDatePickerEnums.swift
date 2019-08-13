@@ -1,12 +1,12 @@
 import UIKit
 
 enum MonthViewIdentifier: Int { case previous, presented, next }
-enum JBScrollDirection { case none, toNext, toPrevious }
+enum MHScrollDirection { case none, toNext, toPrevious }
 
 //In a calendar, day, week, weekday, month, and year numbers are generally 1-based. So Sunday is 1. 
-public enum JBWeekDay: Int { case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday }
-public enum JBSelectionShape { case circle, square, roundedRect }
-public enum JBFontSize { case verySmall, small, medium, large, veryLarge }
+public enum MHWeekDay: Int { case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday }
+public enum MHSelectionShape { case circle, square, roundedRect }
+public enum MHFontSize { case verySmall, small, medium, large, veryLarge }
 
 //only for debugging
 func randomColor() -> UIColor{

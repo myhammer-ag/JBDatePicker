@@ -6,7 +6,7 @@ import UIKit
  information on whether or not the day falls in the month itself or not.
  If not, the day belongs to the previous or next month.
  */
-final class JBDay {
+final class MHDay {
     
     var dayValue: Int
     var monthValue: Int

@@ -8,38 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		C8B39E211E94232300D80C05 /* MHDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B39E1F1E94232300D80C05 /* MHDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8B39E371E9427C700D80C05 /* JBDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E291E9427C700D80C05 /* JBDate.swift */; };
-		C8B39E381E9427C700D80C05 /* JBDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2A1E9427C700D80C05 /* JBDateExtension.swift */; };
-		C8B39E391E9427C700D80C05 /* JBDatePickerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2B1E9427C700D80C05 /* JBDatePickerContentVC.swift */; };
-		C8B39E3A1E9427C700D80C05 /* JBDatePickerDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2C1E9427C700D80C05 /* JBDatePickerDayView.swift */; };
-		C8B39E3B1E9427C700D80C05 /* JBDatePickerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2D1E9427C700D80C05 /* JBDatePickerEnums.swift */; };
-		C8B39E3C1E9427C700D80C05 /* JBDatePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2E1E9427C700D80C05 /* JBDatePickerManager.swift */; };
-		C8B39E3D1E9427C700D80C05 /* JBDatePickerMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2F1E9427C700D80C05 /* JBDatePickerMonthView.swift */; };
-		C8B39E3E1E9427C700D80C05 /* JBDatePickerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E301E9427C700D80C05 /* JBDatePickerSelectionView.swift */; };
-		C8B39E3F1E9427C700D80C05 /* JBDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E311E9427C700D80C05 /* JBDatePickerView.swift */; };
-		C8B39E401E9427C700D80C05 /* JBDatePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E321E9427C700D80C05 /* JBDatePickerViewDelegate.swift */; };
-		C8B39E411E9427C700D80C05 /* JBDatePickerWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E331E9427C700D80C05 /* JBDatePickerWeekDaysView.swift */; };
-		C8B39E421E9427C700D80C05 /* JBDatePickerWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E341E9427C700D80C05 /* JBDatePickerWeekView.swift */; };
-		C8B39E431E9427C700D80C05 /* JBFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E351E9427C700D80C05 /* JBFont.swift */; };
+		C8B39E371E9427C700D80C05 /* MHDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E291E9427C700D80C05 /* MHDate.swift */; };
+		C8B39E381E9427C700D80C05 /* MHDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2A1E9427C700D80C05 /* MHDateExtension.swift */; };
+		C8B39E391E9427C700D80C05 /* MHDatePickerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2B1E9427C700D80C05 /* MHDatePickerContentVC.swift */; };
+		C8B39E3A1E9427C700D80C05 /* MHDatePickerDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2C1E9427C700D80C05 /* MHDatePickerDayView.swift */; };
+		C8B39E3B1E9427C700D80C05 /* MHDatePickerEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2D1E9427C700D80C05 /* MHDatePickerEnums.swift */; };
+		C8B39E3C1E9427C700D80C05 /* MHDatePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2E1E9427C700D80C05 /* MHDatePickerManager.swift */; };
+		C8B39E3D1E9427C700D80C05 /* MHDatePickerMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E2F1E9427C700D80C05 /* MHDatePickerMonthView.swift */; };
+		C8B39E3E1E9427C700D80C05 /* MHDatePickerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E301E9427C700D80C05 /* MHDatePickerSelectionView.swift */; };
+		C8B39E3F1E9427C700D80C05 /* MHDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E311E9427C700D80C05 /* MHDatePickerView.swift */; };
+		C8B39E401E9427C700D80C05 /* MHDatePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E321E9427C700D80C05 /* MHDatePickerViewDelegate.swift */; };
+		C8B39E411E9427C700D80C05 /* MHDatePickerWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E331E9427C700D80C05 /* MHDatePickerWeekDaysView.swift */; };
+		C8B39E421E9427C700D80C05 /* MHDatePickerWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E341E9427C700D80C05 /* MHDatePickerWeekView.swift */; };
+		C8B39E431E9427C700D80C05 /* MHFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B39E351E9427C700D80C05 /* MHFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8B39E1C1E94232300D80C05 /* MHDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B39E1F1E94232300D80C05 /* MHDatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHDatePicker.h; sourceTree = "<group>"; };
 		C8B39E201E94232300D80C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8B39E291E9427C700D80C05 /* JBDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDate.swift; sourceTree = "<group>"; };
-		C8B39E2A1E9427C700D80C05 /* JBDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDateExtension.swift; sourceTree = "<group>"; };
-		C8B39E2B1E9427C700D80C05 /* JBDatePickerContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerContentVC.swift; sourceTree = "<group>"; };
-		C8B39E2C1E9427C700D80C05 /* JBDatePickerDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerDayView.swift; sourceTree = "<group>"; };
-		C8B39E2D1E9427C700D80C05 /* JBDatePickerEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerEnums.swift; sourceTree = "<group>"; };
-		C8B39E2E1E9427C700D80C05 /* JBDatePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerManager.swift; sourceTree = "<group>"; };
-		C8B39E2F1E9427C700D80C05 /* JBDatePickerMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerMonthView.swift; sourceTree = "<group>"; };
-		C8B39E301E9427C700D80C05 /* JBDatePickerSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerSelectionView.swift; sourceTree = "<group>"; };
-		C8B39E311E9427C700D80C05 /* JBDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerView.swift; sourceTree = "<group>"; };
-		C8B39E321E9427C700D80C05 /* JBDatePickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerViewDelegate.swift; sourceTree = "<group>"; };
-		C8B39E331E9427C700D80C05 /* JBDatePickerWeekDaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerWeekDaysView.swift; sourceTree = "<group>"; };
-		C8B39E341E9427C700D80C05 /* JBDatePickerWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBDatePickerWeekView.swift; sourceTree = "<group>"; };
-		C8B39E351E9427C700D80C05 /* JBFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBFont.swift; sourceTree = "<group>"; };
+		C8B39E291E9427C700D80C05 /* MHDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDate.swift; sourceTree = "<group>"; };
+		C8B39E2A1E9427C700D80C05 /* MHDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDateExtension.swift; sourceTree = "<group>"; };
+		C8B39E2B1E9427C700D80C05 /* MHDatePickerContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerContentVC.swift; sourceTree = "<group>"; };
+		C8B39E2C1E9427C700D80C05 /* MHDatePickerDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerDayView.swift; sourceTree = "<group>"; };
+		C8B39E2D1E9427C700D80C05 /* MHDatePickerEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerEnums.swift; sourceTree = "<group>"; };
+		C8B39E2E1E9427C700D80C05 /* MHDatePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerManager.swift; sourceTree = "<group>"; };
+		C8B39E2F1E9427C700D80C05 /* MHDatePickerMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerMonthView.swift; sourceTree = "<group>"; };
+		C8B39E301E9427C700D80C05 /* MHDatePickerSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerSelectionView.swift; sourceTree = "<group>"; };
+		C8B39E311E9427C700D80C05 /* MHDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerView.swift; sourceTree = "<group>"; };
+		C8B39E321E9427C700D80C05 /* MHDatePickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerViewDelegate.swift; sourceTree = "<group>"; };
+		C8B39E331E9427C700D80C05 /* MHDatePickerWeekDaysView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerWeekDaysView.swift; sourceTree = "<group>"; };
+		C8B39E341E9427C700D80C05 /* MHDatePickerWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHDatePickerWeekView.swift; sourceTree = "<group>"; };
+		C8B39E351E9427C700D80C05 /* MHFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +92,10 @@
 		C8B39E441E94283100D80C05 /* Other stuff */ = {
 			isa = PBXGroup;
 			children = (
-				C8B39E291E9427C700D80C05 /* JBDate.swift */,
-				C8B39E2A1E9427C700D80C05 /* JBDateExtension.swift */,
-				C8B39E2D1E9427C700D80C05 /* JBDatePickerEnums.swift */,
-				C8B39E351E9427C700D80C05 /* JBFont.swift */,
+				C8B39E291E9427C700D80C05 /* MHDate.swift */,
+				C8B39E2A1E9427C700D80C05 /* MHDateExtension.swift */,
+				C8B39E2D1E9427C700D80C05 /* MHDatePickerEnums.swift */,
+				C8B39E351E9427C700D80C05 /* MHFont.swift */,
 			);
 			name = "Other stuff";
 			sourceTree = "<group>";
@@ -103,12 +103,12 @@
 		C8B39E451E94289300D80C05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C8B39E2C1E9427C700D80C05 /* JBDatePickerDayView.swift */,
-				C8B39E2F1E9427C700D80C05 /* JBDatePickerMonthView.swift */,
-				C8B39E301E9427C700D80C05 /* JBDatePickerSelectionView.swift */,
-				C8B39E311E9427C700D80C05 /* JBDatePickerView.swift */,
-				C8B39E331E9427C700D80C05 /* JBDatePickerWeekDaysView.swift */,
-				C8B39E341E9427C700D80C05 /* JBDatePickerWeekView.swift */,
+				C8B39E2C1E9427C700D80C05 /* MHDatePickerDayView.swift */,
+				C8B39E2F1E9427C700D80C05 /* MHDatePickerMonthView.swift */,
+				C8B39E301E9427C700D80C05 /* MHDatePickerSelectionView.swift */,
+				C8B39E311E9427C700D80C05 /* MHDatePickerView.swift */,
+				C8B39E331E9427C700D80C05 /* MHDatePickerWeekDaysView.swift */,
+				C8B39E341E9427C700D80C05 /* MHDatePickerWeekView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 		C8B39E461E9428A500D80C05 /* Manager, Controller & Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				C8B39E2B1E9427C700D80C05 /* JBDatePickerContentVC.swift */,
-				C8B39E2E1E9427C700D80C05 /* JBDatePickerManager.swift */,
-				C8B39E321E9427C700D80C05 /* JBDatePickerViewDelegate.swift */,
+				C8B39E2B1E9427C700D80C05 /* MHDatePickerContentVC.swift */,
+				C8B39E2E1E9427C700D80C05 /* MHDatePickerManager.swift */,
+				C8B39E321E9427C700D80C05 /* MHDatePickerViewDelegate.swift */,
 			);
 			name = "Manager, Controller & Delegate";
 			sourceTree = "<group>";
@@ -205,19 +205,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B39E411E9427C700D80C05 /* JBDatePickerWeekDaysView.swift in Sources */,
-				C8B39E371E9427C700D80C05 /* JBDate.swift in Sources */,
-				C8B39E3A1E9427C700D80C05 /* JBDatePickerDayView.swift in Sources */,
-				C8B39E3F1E9427C700D80C05 /* JBDatePickerView.swift in Sources */,
-				C8B39E421E9427C700D80C05 /* JBDatePickerWeekView.swift in Sources */,
-				C8B39E381E9427C700D80C05 /* JBDateExtension.swift in Sources */,
-				C8B39E3E1E9427C700D80C05 /* JBDatePickerSelectionView.swift in Sources */,
-				C8B39E3D1E9427C700D80C05 /* JBDatePickerMonthView.swift in Sources */,
-				C8B39E3B1E9427C700D80C05 /* JBDatePickerEnums.swift in Sources */,
-				C8B39E401E9427C700D80C05 /* JBDatePickerViewDelegate.swift in Sources */,
-				C8B39E391E9427C700D80C05 /* JBDatePickerContentVC.swift in Sources */,
-				C8B39E3C1E9427C700D80C05 /* JBDatePickerManager.swift in Sources */,
-				C8B39E431E9427C700D80C05 /* JBFont.swift in Sources */,
+				C8B39E411E9427C700D80C05 /* MHDatePickerWeekDaysView.swift in Sources */,
+				C8B39E371E9427C700D80C05 /* MHDate.swift in Sources */,
+				C8B39E3A1E9427C700D80C05 /* MHDatePickerDayView.swift in Sources */,
+				C8B39E3F1E9427C700D80C05 /* MHDatePickerView.swift in Sources */,
+				C8B39E421E9427C700D80C05 /* MHDatePickerWeekView.swift in Sources */,
+				C8B39E381E9427C700D80C05 /* MHDateExtension.swift in Sources */,
+				C8B39E3E1E9427C700D80C05 /* MHDatePickerSelectionView.swift in Sources */,
+				C8B39E3D1E9427C700D80C05 /* MHDatePickerMonthView.swift in Sources */,
+				C8B39E3B1E9427C700D80C05 /* MHDatePickerEnums.swift in Sources */,
+				C8B39E401E9427C700D80C05 /* MHDatePickerViewDelegate.swift in Sources */,
+				C8B39E391E9427C700D80C05 /* MHDatePickerContentVC.swift in Sources */,
+				C8B39E3C1E9427C700D80C05 /* MHDatePickerManager.swift in Sources */,
+				C8B39E431E9427C700D80C05 /* MHFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

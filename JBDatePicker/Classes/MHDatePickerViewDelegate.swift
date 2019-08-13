@@ -47,7 +47,7 @@ public protocol MHDatePickerViewDelegate: class {
      - note:
      Implementing this variable is optional. It's default is set to the locale.
      */
-    var firstWeekDay: JBWeekDay {get}
+    var firstWeekDay: MHWeekDay {get}
     
     
     /**
@@ -87,7 +87,7 @@ public protocol MHDatePickerViewDelegate: class {
      Implementing this variable is optional. It's default is set to .circle.
      
      */
-    var selectionShape: JBSelectionShape { get }
+    var selectionShape: MHSelectionShape { get }
     
     /**
      font of the date labels. Defaults to systemfont with a medium size.
@@ -99,18 +99,18 @@ public protocol MHDatePickerViewDelegate: class {
      ## Usage Example: ##
      ````
      //set custom font
-     var fontForDayLabel: JBFont {
-        return JBFont(name: "AvenirNext-MediumItalic", size: .medium)
+     var fontForDayLabel: MHFont {
+        return MHFont(name: "AvenirNext-MediumItalic", size: .medium)
      }
      
      //set system font with custom size
-     var fontForDayLabel: JBFont {
-        return JBFont(name: "", size: .large)
+     var fontForDayLabel: MHFont {
+        return MHFont(name: "", size: .large)
      }
      
      ````
      */
-    var fontForDayLabel: JBFont { get }
+    var fontForDayLabel: MHFont { get }
     
     
     // MARK: - Text Color appearance properties
@@ -151,18 +151,18 @@ public protocol MHDatePickerViewDelegate: class {
      ## Usage Example: ##
      ````
      //set custom font
-     var fontForWeekDaysViewText: JBFont {
-        return JBFont(name: "AvenirNext-MediumItalic", size: .medium)
+     var fontForWeekDaysViewText: MHFont {
+        return MHFont(name: "AvenirNext-MediumItalic", size: .medium)
      }
      
      //set system font with custom size
-     var fontForWeekDaysViewText: JBFont {
-        return JBFont(name: "", size: .large)
+     var fontForWeekDaysViewText: MHFont {
+        return MHFont(name: "", size: .large)
      }
      
      ````
      */
-    var fontForWeekDaysViewText: JBFont { get }
+    var fontForWeekDaysViewText: MHFont { get }
     
     
     // MARK: - Selection Color appearance properties
@@ -190,9 +190,9 @@ public extension MHDatePickerViewDelegate {
     // MARK: - General defaults
     
     public var dateToShow: Date { return Date()}
-    public var firstWeekDay: JBWeekDay {
+    public var firstWeekDay: MHWeekDay {
         
-        if let calendarValue = JBWeekDay(rawValue: Calendar.current.firstWeekday){
+        if let calendarValue = MHWeekDay(rawValue: Calendar.current.firstWeekday){
             return calendarValue
         }
         else {
@@ -203,8 +203,8 @@ public extension MHDatePickerViewDelegate {
     public var shouldShowMonthOutDates: Bool { return true }
     public var shouldLocalize: Bool { return false }
     public var weekDaysViewHeightRatio: CGFloat { return 0.1 }
-    public var selectionShape: JBSelectionShape { return .circle }
-    public var fontForDayLabel: JBFont { return JBFont() }
+    public var selectionShape: MHSelectionShape { return .circle }
+    public var fontForDayLabel: MHFont { return MHFont() }
     
     // MARK: - Color defaults
     
@@ -215,7 +215,7 @@ public extension MHDatePickerViewDelegate {
     public var colorForSelelectedDayLabel: UIColor { return .white }
     public var colorForWeekDaysViewBackground: UIColor { return  UIColor(red: 81.0/255.0, green: 182.0/255.0, blue: 185.0/255.0, alpha: 1.0) }
     public var colorForWeekDaysViewText: UIColor { return .white }
-    public var fontForWeekDaysViewText: JBFont { return JBFont() }
+    public var fontForWeekDaysViewText: MHFont { return MHFont() }
     public var colorForSelectionCircleForOtherDate: UIColor { return  UIColor(red: 81.0/255.0, green: 182.0/255.0, blue: 185.0/255.0, alpha: 1.0) }
     public var colorForSelectionCircleForToday: UIColor { return UIColor(red: 255.0/255.0, green: 98.0/255.0, blue: 89.0/255.0, alpha: 1.0) }
     public var colorForSemiSelectedSelectionCircle: UIColor { return UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0) }

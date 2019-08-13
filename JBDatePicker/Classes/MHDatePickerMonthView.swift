@@ -18,7 +18,7 @@ public final class MHDatePickerMonthView: UIStackView {
     }
     
     public var monthDescription: String!
-    var monthInfo: (monthStartDay: Date, monthEndDay: Date, numberOfWeeksInMonth: Int, weekDayInfo: [[Int:JBDay]])!
+    var monthInfo: (monthStartDay: Date, monthEndDay: Date, numberOfWeeksInMonth: Int, weekDayInfo: [[Int:MHDay]])!
     var numberOfWeeks: Int!
     var weekViews: [MHDatePickerWeekView]!
     

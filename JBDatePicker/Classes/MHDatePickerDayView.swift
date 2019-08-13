@@ -4,7 +4,7 @@ public final class MHDatePickerDayView: UIView {
 
     // MARK: - Properties
     private var index: Int!
-    private var dayInfo: JBDay!
+    private var dayInfo: MHDay!
     weak private var weekView: MHDatePickerWeekView!
     weak private var monthView: MHDatePickerMonthView!
     weak var datePickerView: MHDatePickerView!
@@ -25,7 +25,7 @@ public final class MHDatePickerDayView: UIView {
     
     // MARK: - Initialization
     
-    init(datePickerView: MHDatePickerView, monthView: MHDatePickerMonthView, weekView: MHDatePickerWeekView, index: Int, dayInfo: JBDay) {
+    init(datePickerView: MHDatePickerView, monthView: MHDatePickerMonthView, weekView: MHDatePickerWeekView, index: Int, dayInfo: MHDay) {
         
         self.datePickerView = datePickerView
         self.monthView = monthView

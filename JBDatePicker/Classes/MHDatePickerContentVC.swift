@@ -6,7 +6,7 @@ class MHDatePickerContentVC: UIViewController, UIScrollViewDelegate {
     unowned let datePickerView: MHDatePickerView
     let scrollView: UIScrollView
     var presentedMonthView: MonthView
-    var scrollDirection: JBScrollDirection = .none
+    var scrollDirection: MHScrollDirection = .none
     private var monthViews = [MonthViewIdentifier : MonthView]()
     
     ///flag that helps us preventing presentation while another presentation is still going on 
